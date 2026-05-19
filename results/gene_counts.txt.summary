@@ -1,0 +1,15 @@
+Status	/home/godfather/Downloads/Unix/rnaseq_project/results/SRR18297038_1.sorted.bam	/home/godfather/Downloads/Unix/rnaseq_project/results/SRR18297042_1.sorted.bam
+Assigned	29079690	19808188
+Unassigned_Unmapped	1273349	918015
+Unassigned_Read_Type	0	0
+Unassigned_Singleton	0	0
+Unassigned_MappingQuality	0	0
+Unassigned_Chimera	0	0
+Unassigned_FragmentLength	0	0
+Unassigned_Duplicate	0	0
+Unassigned_MultiMapping	9003049	6020498
+Unassigned_Secondary	0	0
+Unassigned_NonSplit	0	0
+Unassigned_NoFeatures	1917311	1276545
+Unassigned_Overlapping_Length	0	0
+Unassigned_Ambiguity	1143622	788667
