@@ -1,5 +1,6 @@
 # Load required libraries
 library(ggplot2)
+library(pheatmap)
 
 # -----------------------------
 # Read Gene Count Data
@@ -105,4 +106,15 @@ barplot(
   names.arg = c("WT", "H2B8"),
   main = "Expression of AT1G08170",
   ylab = "Read Counts"
+)
+
+topgenes <- head(results[order(-abs(results$log2FoldChange)), ], 20)
+heatmap_data <- countdata[results$Gene %in% topgenes$Gene, ]
+rownames(heatmap_data) <- topgenes$Gene
+
+pheatmap(
+log2(heatmap_data + 1),
+cluster_rows=TRUE,
+cluster_cols=TRUE,
+main="Top Differentially Expressed Genes"
 )
